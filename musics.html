@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar/Ocultar Texto</title>
+    <link rel="stylesheet" href="musics.css">
+</head>
+<body>
+
+    <iframe src="" frameborder="0" name="frame"></iframe>
+
+
+    <button onclick="toggleTexto()"><a href="imagens/eminem-mockingbird_250642.mp4" target="frame">Eminem - Mockingbird (2005)</a></button>
+    <p id="texto">Este é o texto escondido. Clique no botão para ocultá-lo novamente.</p>
+
+    <script>
+        function toggleTexto() {
+            var texto = document.getElementById("texto");
+            var botao = document.querySelector("button");
+            
+            if (texto.style.display === "none") {
+                texto.style.display = "block";
+                botao.textContent = "Ocultar Texto";
+            } else {
+                texto.style.display = "none";
+                botao.textContent = "Mostrar Texto";
+            }
+        }
+    </script>
+
+</body>
+</html>
