@@ -3,140 +3,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar/Ocultar Texto</title>
+    <title>Texto Bilíngue</title>
+    <link rel="stylesheet" href="musics.css">
 </head>
 <body>
     <header>
-        <a class="back" href="ingles.html"><img class="home" src="imagens/square.png" alt=""></a>
-        <img src="imagens/English to practice.png" alt="">
+        <a class="back" href="ingles.html"><img class="home" src="imagens/square (1).png" alt=""></a> <!--HOME-->
+
+        <img src="imagens/English to practice.png" alt=""> <!--LOGO-->
     </heade>
 
 
-    <iframe src="" frameborder="0" name="frame"></iframe>
+    <iframe src="" frameborder="0" name="frame"></iframe> <!--IFRAME PADRAO-->
 
+    <section>
+        <button id="toggleButton"><a href="imagens/eminem-mockingbird_250642.mp4" target="frame">Eminem - Mockingbird (2005)</a></button>
 
-    <button onclick="toggleTexto()"><a href="imagens/eminem-mockingbird_250642.mp4" target="frame">Eminem - Mockingbird (2005)</a></button>
-    <p id="texto">
-        Yeah, I know sometimes <br>
-        Things may not always make sense to you right now <br>
-        But, hey, what daddy always tell you? <br>
-        Straighten up, little soldier <br>
-        Stiffen up that upper lip <br>
-        What you cryin' about? <br>
-        You got me <br>
+        <button class="second" onclick="togglePhrases()"><a href="https://www.youtube.com/embed/iR1r8oOgo6U?si=tgkoDWpIq-iO7Uen" target="frame">Here I go</a></button>
 
-        Hailie, I know you miss your mom and I know you miss your dad <br>
-        Well, I'm gone, but I'm tryin' to give you the life that I never had <br>
-        I can see you're sad, even when you smile, even when you laugh <br>
-        I can see it in your eyes, deep inside you want to cry <br>
-        'Cause you're scared, I ain't there <br>
-        Daddy's with you in your prayers <br>
-        No more cryin', wipe them tears <br>
-        Daddy's here, no more nightmares <br>
-        We gon' pull together through it, we gon' do it <br>
-        Lainie, uncle's crazy, ain't he? <br>
-        Yeah, but he loves you, girl, and you better know it <br> 
-        We're all we got in this world <br>
-        When it spins, when it swirls <br>
-        When it whirls, when it twirls <br>
-        Two little beautiful girls <br>
-        Lookin' puzzled, in a daze <br>
-        I know it's confusin' you <br>
-        Daddy's always on the move, mama's always on the news <br>
-        I try to keep you sheltered from it, but somehow it seems <br>
-        The harder that I try to do that, the more it backfires on me <br>
-        All the things growin' up his as daddy that he had to see <br>
-        Daddy don't want you to see, but you see just as much as he did <br> 
-        We did not plan it to be this way, your mother and me <br>
-        But things have gotten so bad between us <br>
-        I don't see us ever bein' together ever again <br> 
-        Like we used to be when we was teenagers <br>
-        But then, of course, everything always happens for a reason <br>
-        I guess it was never meant to be <br>
-        But it's just something we have no control over and that's what destiny is <br>
-        But no more worries, rest your head and go to sleep <br>
-        Maybe one day we'll wake up and this will all just be a dream <br>
+        <button id="toggleButton2">
+            <a href="imagens/linkinpark-intheend.mp4" target="frame">Hit ´Em Up</a>
+        </button>
 
-        Now hush, little baby, don't you cry <br>
-        Everything's gonna be alright <br>
-        Stiffen that upper lip up, little lady, I told ya <br>
-        Daddy's here to hold ya through the night <br>
-        I know mommy's not here right now and we don't know why <br>
-        We feel how we feel inside <br>
-        It may seem a little crazy, pretty baby <br>
-        But I promise mama's gon' be alright <br>
+        <button id="toggleButton3">
+            <a href="imagens/2pac-changes.mp4" target="frame">Gangstar Track</a>
+        </button>
+        
+        <button id="toggleButton4">
+            <a href="imagens/drdre-stilldre.mp4" target="frame">Window Shopper</a>
+        </button>
+        
+        <button id="toggleButton5">
+            <a href="imagens/notoriousbig-juicy.mp4" target="frame">without Me</a>
+        </button>
+        
+    </section>
 
-        It's funny <br>
-        I remember back one year, when daddy had no money <br>
-        Mommy wrapped the Christmas presents up <br>
-        And stuck 'em under the tree and said some of 'em were from me <br>
-        'Cause daddy couldn't buy 'em <br>
-        I'll never forget that Christmas, I sat up the whole night crying <br>
-        'Cause daddy felt like a bum, see, daddy had a job <br>
-        But his job was to keep the food on the table for you and mom <br>
-        And at the time, every house that we lived in <br>
-        Either kept gettin' broke into and robbed or shot up on the block <br>
-        And your mom was savin' money for you in a jar <br>
-        Tryna start a piggy bank for you so you could go to college <br>
-        Almost had a thousand dollars till someone broke in and stole it <br>
-        And I know it hurt so bad, it broke your mama's heart <br>
-        And it seemed like everything was just startin' to fall apart <br>
-        Mom and dad was arguin' a lot, so momma moved back <br>
-        On the Chalmers in the flat, one-bedroom         apartment <br>
-        And dad moved back to the other side of 8 Mile on Novara <br>
-        And that's when daddy went to California with his CD and met Dr. Dre <br>
-        And flew you and momma out to see me <br>
-        But daddy had to work, you and momma had to leave me <br>
-        Then you started seein' daddy on the TV and momma didn't like it <br>
-        And you and Lainie were too young to understand it <br>
-        Papa was a rolling stone, momma developed a habit <br>
-        And it all happened too fast for either one of us to grab it <br>
-        I'm just sorry you were there and had to witness it first hand <br>
-        'Cause all I ever wanted to do was just make you proud <br>
-        Now I'm sittin' in this empty house, just reminiscin' <br>
-        Lookin' at your baby pictures, it just trips me out <br>
-        To see how much you both have grown, it's almost like you're sisters now <br>
-        Wow, guess you pretty much are, and daddy's still here <br>
-        Lainie, I'm talkin' to you too, daddy's still here <br>
-        I like the sound of that, yeah <br>
-        It's got a ring to it, don't it? <br>
-        Shh, mama's only gone for the moment <br>
+    <div id="textContainer" class="hidden">
+        <p class="text-blue">Yeah, I know sometimes</p>
+        <p class="text-green">É, eu sei que às vezes</p>
+        <p class="text-blue">Things may not always make sense to you right now</p>
+        <p class="text-green">As coisas não devem fazer sentido pra você agora</p>
+        <p class="text-blue">But, hey, what daddy always tell you?</p>
+        <p class="text-green">Mas, ei, o que o papai sempre te disse?</p>
+        <p class="text-blue">Straighten up, little soldier</p>
+        <p class="text-green">Siga em frente, soldadinha</p>
+        <p class="text-blue">Stiffen up that upper lip</p>
+        <p class="text-green">Dê um sorriso</p>
+        <p class="text-blue">What you cryin' about?</p>
+        <p class="text-green">Por que você está chorando?</p>
+        <p class="text-blue">You got me</p>
+        <p class="text-green">Você tem a mim</p>
+        <p class="text-blue">Hailie, I know you miss your mom and I know you miss your dad</p>
+        <p class="text-green">Hailie, eu sei que você sente falta da sua mãe e sei que sente falta do seu pai</p>
+        <p class="text-blue">Well, I'm gone, but I'm tryin' to give you the life that I never had</p>
+        <p class="text-green">Bem, eu fui embora, mas estou tentando lhe dar a vida que eu nunca tive</p>
+        <p class="text-blue">I can see you're sad, even when you smile, even when you laugh</p>
+        <p class="text-green">Eu consigo ver que você está triste, mesmo quando você sorri, mesmo quando você ri</p>
+        <p class="text-blue">I can see it in your eyes, deep inside you want to cry</p>
+        <p class="text-green">Eu consigo ver nos seus olhos, lá no fundo, você quer chorar</p>
+        <p class="text-blue">'Cause you're scared, I ain't there</p>
+        <p class="text-green">Porque você está com medo, eu não estou aí</p>
+        <p class="text-blue">Daddy's with you in your prayers</p>
+        <p class="text-green">Papai está com você nas suas preces</p>
+        <p class="text-blue">No more cryin', wipe them tears</p>
+        <p class="text-green">Nada de choro, enxugue essas lágrimas</p>
+        <p class="text-blue">Daddy's here, no more nightmares</p>
+        <p class="text-green">Papai está aqui, nada de pesadelos</p>
+        <p class="text-blue">We gon' pull together through it, we gon' do it</p>
+        <p class="text-green">Nós vamos passar por isso juntos, nós conseguiremos</p>
+        <p class="text-blue">Lainie, uncle's crazy, ain't he?</p>
+        <p class="text-green">Lainie, o titio é louco, não é?</p>
+        <p class="text-blue">Yeah, but he loves you, girl, and you better know it</p>
+        <p class="text-green">Sim, mas ele te ama, menina, e é melhor você saber disso</p>
+        <p class="text-blue">We're all we got in this world</p>
+        <p class="text-green">Nós somos tudo que temos neste mundo</p>
+        <p class="text-blue">When it spins, when it swirls</p>
+        <p class="text-green">Quando ele roda, quando ele gira</p>
+        <p class="text-blue">When it whirls, when it twirls</p>
+        <p class="text-green">Quando ele redemoinha, quando ele rodopia</p>
+        <p class="text-blue">Two little beautiful girls</p>
+        <p class="text-green">Duas lindas garotinhas</p>
+        <p class="text-blue">Lookin' puzzled, in a daze</p>
+        <p class="text-green">Parecendo confusas, atordoadas</p>
+        <p class="text-blue">I know it's confusin' you</p>
+        <p class="text-green">Eu sei isso que está te confundindo</p>
+        <p class="text-blue">Daddy's always on the move, mama's always on the news</p>
+        <p class="text-green">Papai está sempre se mudando, mamãe está sempre nas notícias</p>
+        <p class="text-blue">I try to keep you sheltered from it, but somehow it seems</p>
+        <p class="text-green">Eu tento te manter longe de tudo isso, mas de alguma maneira parece</p>
+        <p class="text-blue">The harder that I try to do that, the more it backfires on me</p>
+        <p class="text-green">Que quanto mais eu tento fazer isso, mais isso volta para mim</p>
+        <p class="text-blue">All the things growin' up his as daddy that he had to see</p>
+        <p class="text-green">Tantas coisas que aconteceram ao papai que ele teve que ver</p>
+        <p class="text-blue">Daddy don't want you to see, but you see just as much as he did</p>
+        <p class="text-green">Papai que não quer que você veja, mas você vê tanto quanto ele viu</p>
+        <p class="text-blue">We did not plan it to be this way, your mother and me</p>
+        <p class="text-green">Nós não planejamos que fosse assim, a sua mãe e eu</p>
+        <p class="text-blue">But things have gotten so bad between us</p>
+        <p class="text-green">Mas as coisas ficaram muito ruins entre nós</p>
+        <p class="text-blue">I don't see us ever bein' together ever again</p>
+        <p class="text-green">Eu não acho que vamos ficar juntos de novo</p>
+        <p class="text-blue">Like we used to be when we was teenagers</p>
+        <p class="text-green">Como quando éramos adolescentes</p>
+        <p class="text-blue">But then, of course, everything always happens for a reason</p>
+        <p class="text-green">Mas, é claro, tudo acontece por uma razão</p>
+        <p class="text-blue">I guess it was never meant to be</p>
+        <p class="text-green">E acho que nós não fomos feitos um pro outro</p>
+        <p class="text-blue">But it's just something we have no control over and that's what destiny is</p>
+        <p class="text-green">Mas isso é uma coisa da qual não temos controle, isso é o que o destino é</p>
+        <p class="text-blue">But no more worries, rest your head and go to sleep</p>
+        <p class="text-green">Mas nada de preocupações, descanse sua cabeça e vá dormir</p>
+        <p class="text-blue">Maybe one day we'll wake up and this will all just be a dream</p>
+        <p class="text-green">Talvez um dia acordemos e isso tudo será apenas um sonho</p>
+        <p class="text-blue">Now hush, little baby, don't you cry</p>
+        <p class="text-green">Agora quieta, bebezinho, não chore</p>
+        <p class="text-blue">Everything's gonna be alright</p>
+        <p class="text-green">Tudo vai ficar bem</p>
+        <p class="text-blue">Stiffen that upper lip up, little lady, I told ya</p>
+        <p class="text-green">Dê um sorriso, menininha, eu te falei</p>
+        <p class="text-blue">Daddy's here to hold ya through the night</p>
+        <p class="text-green">Papai está aqui para te abraçar a noite inteira</p>
+        <p class="text-blue">I know mommy's not here right now and we don't know why</p>
+        <p class="text-green">Eu sei que mamãe não está aqui agora e não sabemos o porquê</p>
+        <p class="text-blue">We feel how we feel inside</p>
+        <p class="text-green">Temos medo de como nos sentimos por dentro</p>
+        <p class="text-blue">It may seem a little crazy, pretty baby</p>
+        <p class="text-green">E isto pode parecer meio louco, linda menina</p>
+        <p class="text-blue">But I promise mama's gon' be alright</p>
+        <p class="text-green">Mas eu prometo que a mamãe vai ficar bem</p>
+        <p class="text-blue">It's funny</p>
+        <p class="text-green">É engraçado</p>
+        <p class="text-blue">I remember back one year, when daddy had no money</p>
+        <p class="text-green">Eu lembro de alguns anos atrás, quando papai não tinha dinheiro</p>
+        <p class="text-blue">Mommy wrapped the Christmas presents up</p>
+        <p class="text-green">Mamãe embrulhou os presentes de Natal</p>
+        <p class="text-blue">And stuck 'em under the tree and said some of 'em were from me</p>
+        <p class="text-green">E os colocou embaixo da árvore e disse que alguns deles vinham de mim</p>
+        <p class="text-blue">'Cause daddy couldn't buy 'em</p>
+        <p class="text-green">Porque papai não podia comprá-los</p>
+        <p class="text-blue">I'll never forget that Christmas, I sat up the whole night crying</p>
+        <p class="text-green">Eu nunca vou esquecer que naquele Natal eu sentei e passei a noite inteira chorando</p>
+        <p class="text-blue">'Cause daddy felt like a bum, see, daddy had a job</p>
+        <p class="text-green">Eu me senti como um mendigo, veja, papai tinha um trabalho</p>
+        <p class="text-blue">But his job was to keep the food on the table for you and mom</p>
+        <p class="text-green">Mas o trabalho era manter comida na mesa pra você e pra mamãe</p>
+        <p class="text-blue">And at the time, every house that we lived in</p>
+        <p class="text-green">E naquela época, toda casa em que a gente morava</p>
+        <p class="text-blue">Either kept gettin' broke into and robbed or shot up on the block</p>
+        <p class="text-green">Ou era invadida e roubada ou vítima de tiroteios no bairro</p>
+        <p class="text-blue">And your mom was savin' money for you in a jar</p>
+        <p class="text-green">E sua mãe estava guardando dinheiro para você em uma jarra</p>
+        <p class="text-blue">Tryna start a piggy bank for you so you could go to college</p>
+        <p class="text-green">Tentou começar a juntar num porquinho para você, para que pudesse ir pra faculdade</p>
+        <p class="text-blue">Almost had a thousand dollars till someone broke in and stole it</p>
+        <p class="text-green">Tínhamos quase mil dólares até que alguém roubou a jarra</p>
+        <p class="text-blue">And I know it hurt so bad, it broke your mama's heart</p>
+        <p class="text-green">E eu sei que isso doeu tanto que partiu o coração da mamãe</p>
+        <p class="text-blue">And it seemed like everything was just startin' to fall apart</p>
+        <p class="text-green">E parecia que tudo estava começando a desmoronar</p>
+        <p class="text-blue">Mom and dad was arguin' a lot, so momma moved back</p>
+        <p class="text-green">Mamãe e papai estavam discutindo bastante, então mamãe voltou</p>
+        <p class="text-blue">On the Chalmers in the flat, one-bedroom apartment</p>
+        <p class="text-green">A morar no Chalmers, num apartamento de um quarto</p>
+        <p class="text-blue">And dad moved back to the other side of 8 Mile on Novara</p>
+        <p class="text-green">E papai voltou para o outro lado de 8 Mile em Novara</p>
+        <p class="text-blue">And that's when daddy went to California with his CD and met Dr. Dre</p>
+        <p class="text-green">E aí foi quando o papai foi pra Califórnia com seu CD e conheceu o Dr. Dre</p>
+        <p class="text-blue">And flew you and momma out to see me</p>
+        <p class="text-green">E levou você e a mamãe para me ver</p>
+        <p class="text-blue">But daddy had to work, you and momma had to leave me</p>
+        <p class="text-green">Mas papai tinha que trabalhar, e você e mamãe tiveram que me deixar</p>
+        <p class="text-blue">Then you started seein' daddy on the TV and momma didn't like it</p>
+        <p class="text-green">Então você começou a ver papai na TV e mamãe não gostou disso</p>
+        <p class="text-blue">And you and Lainie were too young to understand it</p>
+        <p class="text-green">E você e Lainie eram novas demais para entender isso</p>
+        <p class="text-blue">Papa was a rolling stone, momma developed a habit</p>
+        <p class="text-green">Papai era um andarilho, mamãe desenvolveu um hábito</p>
+        <p class="text-blue">And it all happened too fast for either one of us to grab it</p>
+        <p class="text-green">E tudo aconteceu rápido demais para que qualquer um de nós entendesse</p>
+        <p class="text-blue">I'm just sorry you were there and had to witness it first hand</p>
+        <p class="text-green">Eu só sinto muito por você estar lá e ter que testemunhar em primeira mão</p>
+        <p class="text-blue">'Cause all I ever wanted to do was just make you proud</p>
+        <p class="text-green">Pois tudo que eu queria era fazer era te deixar orgulhosa</p>
+        <p class="text-blue">Now I'm sittin' in this empty house, just reminiscin'</p>
+        <p class="text-green">Agora estou sentado nessa casa vazia, só relembrando</p>
+        <p class="text-blue">Lookin' at your baby pictures, it just trips me out</p>
+        <p class="text-green">Vendo todas as suas fotos de bebê, e me assusta</p>
+        <p class="text-blue">To see how much you both have grown, it's almost like you're sisters now</p>
+        <p class="text-green">Ver o quanto vocês cresceram, é como se fossem irmãs agora</p>
+        <p class="text-blue">Wow, guess you pretty much are, and daddy's still here</p>
+        <p class="text-green">Uau, acho que vocês são mesmo, e papai ainda está aqui</p>
+        <p class="text-blue">Lainie, I'm talkin' to you too, daddy's still here</p>
+        <p class="text-green">Lainie, estou falando com você também, e papai ainda está aqui</p>
+        <p class="text-blue">I like the sound of that, yeah</p>
+        <p class="text-green">Eu gosto do som disso, sim</p>
+        <p class="text-blue">It's got a ring to it, don't it?</p>
+        <p class="text-green">Tem uma tonalidade boa nisso, não tem?</p>
+        <p class="text-blue">Shh, mama's only gone for the moment</p>
+        <p class="text-green">Shh, mamãe só foi embora por este momento</p>
+        <p class="text-blue">Now hush, little baby, don't you cry</p>
+        <p class="text-green">Agora quieta, bebezinho, não chore</p>
+        <p class="text-blue">Everything's gonna be alright</p>
+        <p class="text-green">Tudo vai ficar bem</p>
+        <p class="text-blue">Stiffen that upper lip up, little lady, I told ya</p>
+        <p class="text-green">Dê um sorriso, menininha, eu te falei</p>
+        <p class="text-blue">Daddy's here to hold ya through the night</p>
+        <p class="text-green">Papai está aqui para te abraçar a noite inteira</p>
+        <p class="text-blue">I know mommy's not here right now and we don't know why</p>
+        <p class="text-green">Eu sei que mamãe não está aqui agora e não sabemos o porquê</p>
+        <p class="text-blue">We feel how we feel inside</p>
+        <p class="text-green">Temos medo de como nos sentimos por dentro</p>
+        <p class="text-blue">It may seem a little crazy, pretty baby</p>
+        <p class="text-green">E isto pode parecer meio louco, linda menina</p>
+        <p class="text-blue">But I promise mama's gon' be alright</p>
+        <p class="text-green">Mas eu prometo que a mamãe vai ficar bem</p>
+        <p class="text-blue">And if you ask me to</p>
+        <p class="text-green">E se você pedir</p>
+        <p class="text-blue">Daddy's gonna buy you a mockingbird</p>
+        <p class="text-green">Papai vai te comprar um passarinho</p>
+        <p class="text-blue">I'ma give you the world</p>
+        <p class="text-green">Eu vou te dar o mundo</p>
+        <p class="text-blue">I'ma buy a diamond ring for you</p>
+        <p class="text-green">Eu vou comprar um anel de diamantes para você</p>
+        <p class="text-blue">I'ma sing for you</p>
+        <p class="text-green">Eu vou cantar para você</p>
+        <p class="text-blue">I'll do anything for you to see you smile</p>
+        <p class="text-green">Eu farei de tudo por você, para vê-la sorrir</p>
+        <p class="text-blue">And if that mocking bird don't sing and that ring don't shine</p>
+        <p class="text-green">E se o passarinho não cantar e aquele anel não brilhar</p>
+        <p class="text-blue">I'ma break that birdie's neck</p>
+        <p class="text-green">Eu vou quebrar o pescoço do passarinho</p>
+        <p class="text-blue">I'd go back to the jeweler who sold it to ya</p>
+        <p class="text-green">E vou voltar ao joalheiro que vendeu o anel</p>
+        <p class="text-blue">And make him eat every carat, don't fuck with dad (haha)</p>
+        <p class="text-green">E fazê-lo comer cada quilate, não fode com o papai (haha)</p>
+    </div> <!--TEXTO EMINEM-->
 
-        Now hush, little baby, don't you cry <br>
-        Everything's gonna be alright <br>
-        Stiffen that upper lip up, little lady, I told ya <br>
-        Daddy's here to hold ya through the night <br>
-        I know mommy's not here right now and we don't know why <br>
-        We feel how we feel inside <br>
-        It may seem a little crazy, pretty baby <br>
-        But I promise mama's gon' be alright <br>
+    <div id="phrases" class="escondido">
+        <p class="white">Here I Go </p>
+        <p class="grey">Aqui vou eu</p>
+        <p class="white">Here I go go again</p>
+        <p>Lá vou eu de novo</p>
+        <p class="white">Trying to get more dough</p>
+        <p>Tentando conseguir mais massa</p>
+        <p class="white">I don't need no more</p>
+        <p>Eu não preciso de mais</p>
+        <p class="white">Friends</p>
+        <p>Amigos</p>
+        <p class="white">Next year be my best year</p>
+        <p>Ano que vem será meu melhor ano</p>
+        <p class="white">Yeah I'm going loco</p>
+        <p>Sim, estou ficando louco</p>
+        <p class="white">And</p>
+        <p>E</p>
+        <p class="white">To the ones that said I wouldnt do it</p>
+        <p>Para aqueles que disseram que eu não faria isso</p>
+        <p class="white">Here I go go</p>
+        <p>Aqui vou eu</p>
+        <p class="white">Again</p>
+        <p>Novamente</p>
+        <p class="white">I took a hiatus I'm yelling hi haters</p>
+        <p>Eu dei um hiato e estou gritando oi odiadores</p>
+        <p class="white">Ay, ay, ay</p>
+        <p>Ai ai ai</p>
+        <p class="white">Or should I say fuck'em</p>
+        <p>Ou devo dizer foda-se</p>
+        <p class="white">Like a vibrator</p>
+        <p>Como um vibrador</p>
+        <p class="white">Ay, ay, ay</p>
+        <p>Ai ai ai</p>
+        <p class="white">They thought I was dead I'm catching my breath</p>
+        <p>Eles pensaram que eu estava morto, estou recuperando o fôlego</p>
+        <p class="white">Ay, ay, ay</p>
+        <p>Ai ai ai</p>
+        <p class="white">Got rid of my ex I felt it was best</p>
+        <p>Me livrei do meu ex achei que era melhor</p>
+        <p class="white">Now I want all the respect</p>
+        <p>Agora eu quero todo o respeito</p>
+        <p class="white">And I want all of the checks I might lift off in a jet</p>
+        <p>E quero todos os cheques que posso decolar em um jato</p>
+        <p class="white">I'm ready for war</p>
+        <p>Estou pronto para a guerra</p>
+        <p class="white">Protect my heart in my chest</p>
+        <p>Proteja meu coração em meu peito</p>
+        <p class="white">I must appear in a vest (yes)</p>
+        <p>Devo aparecer de colete (sim)</p>
+        <p class="white">I see the light dimming like (woah)</p>
+        <p>Eu vejo a luz escurecendo como (woah)</p>
+        <p class="white">But I shall never ever fold</p>
+        <p>Mas eu nunca irei desistir</p>
+        <p class="white">That redlight yellowlight slow</p>
+        <p>Aquela luz vermelha luz amarela lenta</p>
+        <p class="white">That greenlight feeling like go</p>
+        <p>Aquela luz verde sentindo vontade de ir</p>
+        <p class="white">Here I go go again</p>
+        <p>Lá vou eu de novo</p>
+        <p class="white">Trying to get more dough</p>
+        <p>Tentando conseguir mais massa</p>
+        <p class="white">I don't need no more</p>
+        <p>Eu não preciso de mais </p>
+        <p class="white">Friends</p>
+        <p>Amigos</p>
+        <p class="white">Next year be my best year</p>
+        <p>Ano que vem será meu melhor ano</p>
+        <p class="white">Yeah I'm going loco</p>
+        <p>Sim, estou ficando louco</p>
+        <p class="white">And</p>
+        <p>E</p>
+        <p class="white">To the ones that said I wouldn't do it</p>
+        <p>Para aqueles que disseram que eu não faria isso</p>
+        <p class="white">Here I go, go</p>
+        <p>Aqui vou eu vou</p>
+        <p class="white">Again</p>
+        <p>Novamente</p>
+        <p class="white">I'm going all in</p>
+        <p>Estou indo all in</p>
+        <p class="white">(All in, all in) (all in, all in) (all in, all in)</p>
+        <p>(Tudo dentro, tudo dentro) (tudo dentro, tudo dentro) (tudo dentro, tudo dentro)</p>
+        <p class="white">I called this here my second round second hand</p>
+        <p>Eu chamei isso aqui de meu ponteiro de segunda rodada</p>
+        <p class="white">Most won't get them a second chance</p>
+        <p>A maioria não terá uma segunda chance</p>
+        <p class="white">Ali I be wit the bob and weave</p>
+        <p>Ali eu vou saber o bob e tecer</p>
+        <p class="white">If I miss with the first bet the second land</p>
+        <p>Se eu falhar com a primeira aposta, o segundo terreno</p>
+        <p class="white">(Pop, pop out) I can pull a rabbit out of a hat</p>
+        <p>(Pop, sai) Eu posso tirar um coelho da cartola</p>
+        <p class="white">(Watch out)</p>
+        <p>(Cuidado)</p>
+        <p class="white">I am just an addict with a static</p>
+        <p>Eu sou apenas um viciado com uma estática</p>
+        <p class="white">(Knock out)</p>
+        <p>(Nocaute)</p>
+        <p class="white">Dodging the (ratatatta)</p>
+        <p>Esquivando-se do (ratatatta)</p>
+        <p class="white">Ff it means by any means</p>
+        <p>Ff significa por qualquer meio</p>
+        <p class="white">Or matter</p>
+        <p>Ou importa</p>
+        <p class="white">Now I want all the respect</p>
+        <p>Agora eu quero todo o respeito</p>
+        <p class="white">And I want all of the checks I might lift off in a jet</p>
+        <p>E quero todos os cheques que posso decolar em um jato</p>
+        <p class="white">I'm ready for war</p>
+        <p>Estou pronto para a guerra</p>
+        <p class="white">Protect my heart in my chest</p>
+        <p>Proteja meu coração em meu peito</p>
+        <p class="white">I must appear in a vest (yes)</p>
+        <p>Devo aparecer de colete (sim)</p>
+        <p class="white">I see the light dimming like (woah)</p>
+        <p>Eu vejo a luz escurecendo como (woah)</p>
+        <p class="white">But I shall never ever fold</p>
+        <p>Mas eu nunca irei desistir</p>
+        <p class="white">That redlight yellowlight slow</p>
+        <p>Aquela luz vermelha luz amarela lenta</p>
+        <p class="white">That redlight yellowlight slow</p>
+        <p>Aquela luz verde sentindo vontade de ir</p>
+        <p class="white">Here I go go again</p>
+        <p>Lá vou eu de novo</p>
+        <p class="white">Trying to get more dough</p>
+        <p>Tentando conseguir mais massa</p>
+        <p class="white">I don't need no more</p>
+        <p>Eu não preciso de mais </p>
+        <p class="white">Friends</p>
+        <p>Amigos</p>
+        <p class="white">Next year be my best year</p>
+        <p>Ano que vem será meu melhor ano</p>
+        <p class="white">Yeah I'm going loco</p>
+        <p>Sim, estou ficando louco</p>
+        <p class="white">And</p>
+        <p>E</p>
+        <p class="white">To the ones that said I wouldn't do it</p>
+        <p>Para aqueles que disseram que eu não faria isso</p>
+        <p class="white">Here I go, go</p>
+        <p>Aqui vou eu vou</p>
+        <p class="white">Again</p>
+        <p>Novamente</p>
+        <p class="white">I'm going all in</p>
+        <p>Estou indo all in</p>
+        <p class="white">(All in, all in) (all in, all in) (all in, all in)</p>
+        <p>(Tudo dentro, tudo dentro) (tudo dentro, tudo dentro) (tudo dentro, tudo dentro)</p>
+        <p class="white">When you down on your luck and you know</p>
+        <p>Quando você está sem sorte e sabe</p>
+        <p class="white">That your weak and cant carry the load</p>
+        <p>Que você é fraco e não consegue carregar a carga</p>
+        <p class="white">Still go, still go, still go</p>
+        <p>Ainda vá, ainda vá, ainda vá</p>
+        <p class="white">When out in the rain and its cold and it feels</p>
+        <p>Quando está fora na chuva e está frio e parece</p>
+        <p class="white">Like the end of the road</p>
+        <p>Como o fim da estrada</p>
+        <p class="white">Still go, still go, still go</p>
+        <p>Ainda vá, ainda vá, ainda vá</p>
+        <p class="white">When out in the rain and its cold and it feels</p>
+        <p>Quando está fora na chuva e está frio e parece</p>
+        <p class="white">Like the end of the road</p>
+        <p>Como o fim da estrada</p>
+        <p class="white">Still go, still go, still go</p>
+        <p>Ainda vá, ainda vá, ainda vá</p>
+        <p class="white">When out in the rain and its cold and it feels</p>
+        <p>Quando está fora na chuva e está frio e parece</p>
+        <p class="white">Like the end of the road</p>
+        <p>Como o fim da estrada</p>
+        <p class="white">Still go, still go, still go</p>
+        <p>Ainda vá, ainda vá, ainda vá</p>
+        <p class="white">All in, all in, all in, all in, all in, all in, all in</p>
+        <p>Tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro</p>
+    </div> <!--TEXTO JON VLOGS-->   
 
-        And if you ask me to <br>
-        Daddy's gonna buy you a mockingbird <br>
-        I'ma give you the world <br>
-        I'ma buy a diamond ring for you <br>
-        I'ma sing for you <br>
-        I'll do anything for you to see you smile <br>
-        And if that mocking bird don't sing and that ring don't shine <br>
-        I'ma break that birdie's neck <br>
-        I'd go back to the jeweler who sold it to ya <br>
-        And make him eat every carat, don't fuck with dad (haha) <br>
-</p>
 
     <script>
-        function toggleTexto() {
-            var texto = document.getElementById("texto");
-            var botao = document.querySelector("button");
-            
-            if (texto.style.display === "none") {
-                texto.style.display = "block";
-                botao.textContent = "Ocultar Texto";
-            }            
-            else {
-                texto.style.display = "none";
-                botao.textContent = "Mostrar Texto";
+        const button = document.getElementById("toggleButton");
+        const textContainer = document.getElementById("textContainer");
+
+        button.addEventListener("click", () => {
+            if (textContainer.classList.contains("hidden")) {
+                textContainer.classList.remove("hidden");
+                button.textContent = "Esconder Texto";
+            } else {
+                textContainer.classList.add("hidden");
+                button.textContent = "Mostrar Texto";
             }
-        }
+        });
+
+        function togglePhrases() {
+            var phrasesDiv = document.getElementById("phrases");
+            if (phrasesDiv.classList.contains("hidden")) {
+                phrasesDiv.classList.remove("hidden");
+            } else {
+                phrasesDiv.classList.add("hidden");
+            }
+        };
     </script>
 
 </body>
