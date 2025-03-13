@@ -38,17 +38,9 @@ iframe {
     border-radius: 15px;
 }
 
-
-/* COMEÇO Eminem - Mockingbird (2005)*/
-
-#texto {
-    display: none;
-    margin-top: 10px;
-}
-
 section {
     display: flex;
-
+    margin-left: 25%;
 }
 
 button {
@@ -66,6 +58,13 @@ button {
 a {
     text-decoration: none;
     color: black;
+}
+
+/* COMEÇO Eminem - Mockingbird (2005)*/
+
+#texto {
+    display: none;
+    margin-top: 10px;
 }
 
 .text-blue {
@@ -99,9 +98,30 @@ p {
 }
 
 #phrases {
+    margin-top: 70px;
     text-align: center;
 }
 
-
-
 /*FIM HERE I GO*/
+
+/*COMEÇO HIT EM UP*/
+
+p {
+    color: lightslategray;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 3;
+}
+
+.white {
+   color: black;
+}
+
+#textContainer {
+    margin-top: 70px;
+    text-align: center;
+}
+
+/*FIM HIT EM UP*/
