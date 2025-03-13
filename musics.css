@@ -29,6 +29,10 @@ header img {
     width: 300px;
 }
 
+.logo {
+    margin: auto;
+}
+
 iframe {
     height: 60vh;
     width: 50vw;
