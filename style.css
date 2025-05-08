@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-principal: #022601;
+    --cor-secundaria: #067302;
+    --cor-terciaria: #1DF216;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+html {
+    font-family: var(--fonte-principal);
+}
+
+.logo {
+    width: 170px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+header, section, h3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 1.2em;
+  }
+
+  a:hover {
+    color: var(--cor-terciaria);
+    transform: translateY(-5px);
+    transition: all 0.5s;
+  }
+
+  .menu-2 {
+    display: none;
+  }
+
+  /* Responsivo */
+
+  @media (max-width:600px) {
+    header {
+        display: block;
+    }
+
+    .menu-1 {
+        display: none;
+    }
+
+    .menu-2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 5px;
+    }
+  }
+  
+  /* Imagem de fundo */
+  .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/tela-inicial.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+  
+  /* Camada preta com opacidade */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7; /* escurece a imagem */
+    z-index: -1;
+  }
+  
+  /* Conteúdo */
+  header, main, footer {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
