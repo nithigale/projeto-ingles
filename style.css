@@ -64,6 +64,11 @@ header, section, h3{
   @media (max-width:600px) {
     header {
         display: block;
+        text-align: center;
+    }
+
+    .logo {
+      display: inline-block;
     }
 
     .menu-1 {
