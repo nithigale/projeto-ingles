@@ -59,6 +59,10 @@ header, section, h3{
     display: none;
   }
 
+  .text-2 {
+    display: none;
+  }
+
   /* Responsivo */
 
   @media (max-width:600px) {
@@ -80,6 +84,14 @@ header, section, h3{
         justify-content: space-around;
         align-items: center;
         padding-top: 5px;
+    }
+
+    .text-1 {
+      display: none;
+    }
+
+    .text-2 {
+      display: block;
     }
   }
   
@@ -123,7 +135,7 @@ header, section, h3{
   
   h1 {
     color: var(--cor-terciaria);
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 15%;
     padding-bottom: 50px;
     text-align: left;
