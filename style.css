@@ -121,7 +121,7 @@ header, .menu-1, h3{
     height: 100%;
     background-image: url('imagens/tela-inicial.png');
     background-size: cover;
-    background-position: center;
+    background-position: right;
     z-index: -2;
   }
   
