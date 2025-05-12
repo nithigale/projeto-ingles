@@ -65,7 +65,7 @@ header, section, h3{
 
   /* Responsivo */
 
-  @media (max-width:600px) {
+  @media (max-width:700px) {
     header {
         display: block;
     }
@@ -97,6 +97,11 @@ header, section, h3{
     .principal {
       margin: auto;
       text-align: center;
+    }
+
+    .bg {
+      background-image: url('imagens/tela-inicial.png');
+      background-position: left center;
     }
   }
   
