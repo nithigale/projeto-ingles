@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -25,10 +26,11 @@ body {
     font-family: Arial, sans-serif;
     position: relative;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
-header, section, h3{
+header, .menu-1, h3{
     display: flex;
     justify-content: space-around;
     align-items: center;
