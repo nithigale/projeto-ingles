@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Iframe de Fundo Fixo com Opacidade e Interação</title>
+  <link rel="stylesheet" href="musics.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Container do vídeo */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1; /* O vídeo ficará abaixo do conteúdo */
+    }
+
+    .video-background iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      pointer-events: auto; /* Permite a interação com o vídeo */
+      opacity: 0.7; /* Aplique a opacidade diretamente ao vídeo */
+    }
+
+    /* Overlay preto com opacidade, mas sem bloquear a interação com o vídeo */
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade */
+      z-index: -1; /* Overlay abaixo do conteúdo */
+      pointer-events: none; /* Não bloqueia a interação com o vídeo */
+    }
+
+    /* Conteúdo por cima */
+    .content {
+      position: relative;
+      z-index: 1; /* Conteúdo acima do vídeo */
+      color: white;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      line-height: 2;
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    body {
+      height: 200vh; /* Faz o conteúdo rolar */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Vídeo do YouTube como fundo -->
+  <div class="video-background">
+    <iframe
+      id="video-iframe"
+      src="https://www.youtube.com/embed/iR1r8oOgo6U?loop=1&playlist=iR1r8oOgo6U&controls=1&modestbranding=1"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+    <!-- Overlay preto com opacidade -->
+    <div class="video-overlay"></div>
+  </div>
+
+
+  
+
+  <!-- Conteúdo rolável por cima -->
+  <div class="content">
+    <div class="overlay">
+      <h1>Texto sobre o vídeo</h1>
+      <p>Aqui vou eu...</p>
+    </div>
+  </div>
+
+</body>
+</html>

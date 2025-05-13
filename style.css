@@ -103,6 +103,7 @@ header, .menu-1, h3{
 
     .principal {
       margin: auto;
+      margin-top: -10px;
       text-align: center;
     }
 

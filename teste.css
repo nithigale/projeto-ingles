@@ -1,0 +1,45 @@
+@charset "UTFF-8";
+        
+body, html {
+    height: 200vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1; /* Garante que o vídeo ficará atrás da camada de sobreposição */
+}
+
+.video-background iframe {
+     width: 100%;
+     height: 100%;
+     border: none;
+}
+
+.traducao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Opacidade preta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    z-index: 2; /* Coloca o texto sobre o vídeo */
+    pointer-events: none; /* Permite que o vídeo seja interativo */
+}
