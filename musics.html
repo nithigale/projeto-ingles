@@ -1,96 +1,371 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Iframe de Fundo Fixo com Opacidade e Interação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musics</title>
   <link rel="stylesheet" href="musics.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Container do vídeo */
-    .video-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      z-index: -1; /* O vídeo ficará abaixo do conteúdo */
-    }
-
-    .video-background iframe {
-      width: 100vw;
-      height: 100vh;
-      border: none;
-      pointer-events: auto; /* Permite a interação com o vídeo */
-      opacity: 0.7; /* Aplique a opacidade diretamente ao vídeo */
-    }
-
-    /* Overlay preto com opacidade, mas sem bloquear a interação com o vídeo */
-    .video-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade */
-      z-index: -1; /* Overlay abaixo do conteúdo */
-      pointer-events: none; /* Não bloqueia a interação com o vídeo */
-    }
-
-    /* Conteúdo por cima */
-    .content {
-      position: relative;
-      z-index: 1; /* Conteúdo acima do vídeo */
-      color: white;
-      font-family: sans-serif;
-      padding: 2rem;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      text-align: center;
-      line-height: 2;
-      padding: 2rem;
-      border-radius: 8px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    body {
-      height: 200vh; /* Faz o conteúdo rolar */
-    }
-  </style>
 </head>
 <body>
+    <header>
+      <img class="logo" src="imagens/logo.png">
+    </header>
 
-  <!-- Vídeo do YouTube como fundo -->
-  <div class="video-background">
-    <iframe
-      id="video-iframe"
-      src="https://www.youtube.com/embed/iR1r8oOgo6U?loop=1&playlist=iR1r8oOgo6U&controls=1&modestbranding=1"
-      frameborder="0"
-      allow="autoplay; fullscreen"
-      allowfullscreen
-    ></iframe>
-    <!-- Overlay preto com opacidade -->
-    <div class="video-overlay"></div>
-  </div>
+    <main>
 
+        <section class="primeiro-texto">
+          <p class="white">Here I Go </p>
+          <p class="grey">Aqui vou eu</p>
+          <p class="white">Here I go go again</p>
+          <p>Lá vou eu de novo</p>
+          <p class="white">Trying to get more dough</p>
+          <p>Tentando conseguir mais massa</p>
+          <p class="white">I don't need no more</p>
+          <p>Eu não preciso de mais</p>
+          <p class="white">Friends</p>
+          <p>Amigos</p>
+          <p class="white">Next year be my best year</p>
+          <p>Ano que vem será meu melhor ano</p>
+          <p class="white">Yeah I'm going loco</p>
+          <p>Sim, estou ficando louco</p>
+          <p class="white">And</p>
+          <p>E</p>
+          <p class="white">To the ones that said I wouldnt do it</p>
+          <p>Para aqueles que disseram que eu não faria isso</p>
+          <p class="white">Here I go go</p>
+          <p>Aqui vou eu</p>
+          <p class="white">Again</p>
+          <p>Novamente</p>
+          <p class="white">I took a hiatus I'm yelling hi haters</p>
+          <p>Eu dei um hiato e estou gritando oi odiadores</p>
+          <p class="white">Ay, ay, ay</p>
+          <p>Ai ai ai</p>
+          <p class="white">Or should I say fuck'em</p>
+          <p>Ou devo dizer foda-se</p>
+          <p class="white">Like a vibrator</p>
+          <p>Como um vibrador</p>
+          <p class="white">Ay, ay, ay</p>
+          <p>Ai ai ai</p>
+          <p class="white">They thought I was dead I'm catching my breath</p>
+          <p>Eles pensaram que eu estava morto, estou recuperando o fôlego</p>
+          <p class="white">Ay, ay, ay</p>
+          <p>Ai ai ai</p>
+          <p class="white">Got rid of my ex I felt it was best</p>
+          <p>Me livrei do meu ex achei que era melhor</p>
+          <p class="white">Now I want all the respect</p>
+          <p>Agora eu quero todo o respeito</p>
+          <p class="white">And I want all of the checks I might lift off in a jet</p>
+          <p>E quero todos os cheques que posso decolar em um jato</p>
+          <p class="white">I'm ready for war</p>
+          <p>Estou pronto para a guerra</p>
+          <p class="white">Protect my heart in my chest</p>
+          <p>Proteja meu coração em meu peito</p>
+          <p class="white">I must appear in a vest (yes)</p>
+          <p>Devo aparecer de colete (sim)</p>
+          <p class="white">I see the light dimming like (woah)</p>
+          <p>Eu vejo a luz escurecendo como (woah)</p>
+          <p class="white">But I shall never ever fold</p>
+          <p>Mas eu nunca irei desistir</p>
+          <p class="white">That redlight yellowlight slow</p>
+          <p>Aquela luz vermelha luz amarela lenta</p>
+          <p class="white">That greenlight feeling like go</p>
+          <p>Aquela luz verde sentindo vontade de ir</p>
+          <p class="white">Here I go go again</p>
+          <p>Lá vou eu de novo</p>
+          <p class="white">Trying to get more dough</p>
+          <p>Tentando conseguir mais massa</p>
+          <p class="white">I don't need no more</p>
+          <p>Eu não preciso de mais </p>
+          <p class="white">Friends</p>
+          <p>Amigos</p>
+          <p class="white">Next year be my best year</p>
+          <p>Ano que vem será meu melhor ano</p>
+          <p class="white">Yeah I'm going loco</p>
+          <p>Sim, estou ficando louco</p>
+          <p class="white">And</p>
+          <p>E</p>
+          <p class="white">To the ones that said I wouldn't do it</p>
+          <p>Para aqueles que disseram que eu não faria isso</p>
+          <p class="white">Here I go, go</p>
+          <p>Aqui vou eu vou</p>
+          <p class="white">Again</p>
+          <p>Novamente</p>
+          <p class="white">I'm going all in</p>
+          <p>Estou indo all in</p>
+          <p class="white">(All in, all in) (all in, all in) (all in, all in)</p>
+          <p>(Tudo dentro, tudo dentro) (tudo dentro, tudo dentro) (tudo dentro, tudo dentro)</p>
+          <p class="white">I called this here my second round second hand</p>
+          <p>Eu chamei isso aqui de meu ponteiro de segunda rodada</p>
+          <p class="white">Most won't get them a second chance</p>
+          <p>A maioria não terá uma segunda chance</p>
+          <p class="white">Ali I be wit the bob and weave</p>
+          <p>Ali eu vou saber o bob e tecer</p>
+          <p class="white">If I miss with the first bet the second land</p>
+          <p>Se eu falhar com a primeira aposta, o segundo terreno</p>
+          <p class="white">(Pop, pop out) I can pull a rabbit out of a hat</p>
+          <p>(Pop, sai) Eu posso tirar um coelho da cartola</p>
+          <p class="white">(Watch out)</p>
+          <p>(Cuidado)</p>
+          <p class="white">I am just an addict with a static</p>
+          <p>Eu sou apenas um viciado com uma estática</p>
+          <p class="white">(Knock out)</p>
+          <p>(Nocaute)</p>
+          <p class="white">Dodging the (ratatatta)</p>
+          <p>Esquivando-se do (ratatatta)</p>
+          <p class="white">Ff it means by any means</p>
+          <p>Ff significa por qualquer meio</p>
+          <p class="white">Or matter</p>
+          <p>Ou importa</p>
+          <p class="white">Now I want all the respect</p>
+          <p>Agora eu quero todo o respeito</p>
+          <p class="white">And I want all of the checks I might lift off in a jet</p>
+          <p>E quero todos os cheques que posso decolar em um jato</p>
+          <p class="white">I'm ready for war</p>
+          <p>Estou pronto para a guerra</p>
+          <p class="white">Protect my heart in my chest</p>
+          <p>Proteja meu coração em meu peito</p>
+          <p class="white">I must appear in a vest (yes)</p>
+          <p>Devo aparecer de colete (sim)</p>
+          <p class="white">I see the light dimming like (woah)</p>
+          <p>Eu vejo a luz escurecendo como (woah)</p>
+          <p class="white">But I shall never ever fold</p>
+          <p>Mas eu nunca irei desistir</p>
+          <p class="white">That redlight yellowlight slow</p>
+          <p>Aquela luz vermelha luz amarela lenta</p>
+          <p class="white">That redlight yellowlight slow</p>
+          <p>Aquela luz verde sentindo vontade de ir</p>
+          <p class="white">Here I go go again</p>
+          <p>Lá vou eu de novo</p>
+          <p class="white">Trying to get more dough</p>
+          <p>Tentando conseguir mais massa</p>
+          <p class="white">I don't need no more</p>
+          <p>Eu não preciso de mais </p>
+          <p class="white">Friends</p>
+          <p>Amigos</p>
+          <p class="white">Next year be my best year</p>
+          <p>Ano que vem será meu melhor ano</p>
+          <p class="white">Yeah I'm going loco</p>
+          <p>Sim, estou ficando louco</p>
+          <p class="white">And</p>
+          <p>E</p>
+          <p class="white">To the ones that said I wouldn't do it</p>
+          <p>Para aqueles que disseram que eu não faria isso</p>
+          <p class="white">Here I go, go</p>
+          <p>Aqui vou eu vou</p>
+          <p class="white">Again</p>
+          <p>Novamente</p>
+          <p class="white">I'm going all in</p>
+          <p>Estou indo all in</p>
+          <p class="white">(All in, all in) (all in, all in) (all in, all in)</p>
+          <p>(Tudo dentro, tudo dentro) (tudo dentro, tudo dentro) (tudo dentro, tudo dentro)</p>
+          <p class="white">When you down on your luck and you know</p>
+          <p>Quando você está sem sorte e sabe</p>
+          <p class="white">That your weak and cant carry the load</p>
+          <p>Que você é fraco e não consegue carregar a carga</p>
+          <p class="white">Still go, still go, still go</p>
+          <p>Ainda vá, ainda vá, ainda vá</p>
+          <p class="white">When out in the rain and its cold and it feels</p>
+          <p>Quando está fora na chuva e está frio e parece</p>
+          <p class="white">Like the end of the road</p>
+          <p>Como o fim da estrada</p>
+          <p class="white">Still go, still go, still go</p>
+          <p>Ainda vá, ainda vá, ainda vá</p>
+          <p class="white">When out in the rain and its cold and it feels</p>
+          <p>Quando está fora na chuva e está frio e parece</p>
+          <p class="white">Like the end of the road</p>
+          <p>Como o fim da estrada</p>
+          <p class="white">Still go, still go, still go</p>
+          <p>Ainda vá, ainda vá, ainda vá</p>
+          <p class="white">When out in the rain and its cold and it feels</p>
+          <p>Quando está fora na chuva e está frio e parece</p>
+          <p class="white">Like the end of the road</p>
+          <p>Como o fim da estrada</p>
+          <p class="white">Still go, still go, still go</p>
+          <p>Ainda vá, ainda vá, ainda vá</p>
+          <p class="white">All in, all in, all in, all in, all in, all in, all in</p>
+          <p>Tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro</p>
+        </section>
+    
+        <iframe class="primeiro-video" width="560" height="315" src="https://www.youtube.com/embed/iR1r8oOgo6U?si=tgkoDWpIq-iO7Uen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  
+        <iframe class="segundo-video" width="560" height="315" src="https://www.youtube.com/embed/iR1r8oOgo6U?si=tgkoDWpIq-iO7Uen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  <!-- Conteúdo rolável por cima -->
-  <div class="content">
-    <div class="overlay">
-      <h1>Texto sobre o vídeo</h1>
-      <p>Aqui vou eu...</p>
-    </div>
-  </div>
+        <section class="segundo-texto">
+          <p class="white">Here I Go </p>
+          <p class="grey">Aqui vou eu</p>
+          <p class="white">Here I go go again</p>
+          <p>Lá vou eu de novo</p>
+          <p class="white">Trying to get more dough</p>
+          <p>Tentando conseguir mais massa</p>
+          <p class="white">I don't need no more</p>
+          <p>Eu não preciso de mais</p>
+          <p class="white">Friends</p>
+          <p>Amigos</p>
+          <p class="white">Next year be my best year</p>
+          <p>Ano que vem será meu melhor ano</p>
+          <p class="white">Yeah I'm going loco</p>
+          <p>Sim, estou ficando louco</p>
+          <p class="white">And</p>
+          <p>E</p>
+          <p class="white">To the ones that said I wouldnt do it</p>
+          <p>Para aqueles que disseram que eu não faria isso</p>
+          <p class="white">Here I go go</p>
+          <p>Aqui vou eu</p>
+          <p class="white">Again</p>
+          <p>Novamente</p>
+          <p class="white">I took a hiatus I'm yelling hi haters</p>
+          <p>Eu dei um hiato e estou gritando oi odiadores</p>
+          <p class="white">Ay, ay, ay</p>
+          <p>Ai ai ai</p>
+          <p class="white">Or should I say fuck'em</p>
+          <p>Ou devo dizer foda-se</p>
+          <p class="white">Like a vibrator</p>
+          <p>Como um vibrador</p>
+          <p class="white">Ay, ay, ay</p>
+          <p>Ai ai ai</p>
+          <p class="white">They thought I was dead I'm catching my breath</p>
+          <p>Eles pensaram que eu estava morto, estou recuperando o fôlego</p>
+          <p class="white">Ay, ay, ay</p>
+          <p>Ai ai ai</p>
+          <p class="white">Got rid of my ex I felt it was best</p>
+          <p>Me livrei do meu ex achei que era melhor</p>
+          <p class="white">Now I want all the respect</p>
+          <p>Agora eu quero todo o respeito</p>
+          <p class="white">And I want all of the checks I might lift off in a jet</p>
+          <p>E quero todos os cheques que posso decolar em um jato</p>
+          <p class="white">I'm ready for war</p>
+          <p>Estou pronto para a guerra</p>
+          <p class="white">Protect my heart in my chest</p>
+          <p>Proteja meu coração em meu peito</p>
+          <p class="white">I must appear in a vest (yes)</p>
+          <p>Devo aparecer de colete (sim)</p>
+          <p class="white">I see the light dimming like (woah)</p>
+          <p>Eu vejo a luz escurecendo como (woah)</p>
+          <p class="white">But I shall never ever fold</p>
+          <p>Mas eu nunca irei desistir</p>
+          <p class="white">That redlight yellowlight slow</p>
+          <p>Aquela luz vermelha luz amarela lenta</p>
+          <p class="white">That greenlight feeling like go</p>
+          <p>Aquela luz verde sentindo vontade de ir</p>
+          <p class="white">Here I go go again</p>
+          <p>Lá vou eu de novo</p>
+          <p class="white">Trying to get more dough</p>
+          <p>Tentando conseguir mais massa</p>
+          <p class="white">I don't need no more</p>
+          <p>Eu não preciso de mais </p>
+          <p class="white">Friends</p>
+          <p>Amigos</p>
+          <p class="white">Next year be my best year</p>
+          <p>Ano que vem será meu melhor ano</p>
+          <p class="white">Yeah I'm going loco</p>
+          <p>Sim, estou ficando louco</p>
+          <p class="white">And</p>
+          <p>E</p>
+          <p class="white">To the ones that said I wouldn't do it</p>
+          <p>Para aqueles que disseram que eu não faria isso</p>
+          <p class="white">Here I go, go</p>
+          <p>Aqui vou eu vou</p>
+          <p class="white">Again</p>
+          <p>Novamente</p>
+          <p class="white">I'm going all in</p>
+          <p>Estou indo all in</p>
+          <p class="white">(All in, all in) (all in, all in) (all in, all in)</p>
+          <p>(Tudo dentro, tudo dentro) (tudo dentro, tudo dentro) (tudo dentro, tudo dentro)</p>
+          <p class="white">I called this here my second round second hand</p>
+          <p>Eu chamei isso aqui de meu ponteiro de segunda rodada</p>
+          <p class="white">Most won't get them a second chance</p>
+          <p>A maioria não terá uma segunda chance</p>
+          <p class="white">Ali I be wit the bob and weave</p>
+          <p>Ali eu vou saber o bob e tecer</p>
+          <p class="white">If I miss with the first bet the second land</p>
+          <p>Se eu falhar com a primeira aposta, o segundo terreno</p>
+          <p class="white">(Pop, pop out) I can pull a rabbit out of a hat</p>
+          <p>(Pop, sai) Eu posso tirar um coelho da cartola</p>
+          <p class="white">(Watch out)</p>
+          <p>(Cuidado)</p>
+          <p class="white">I am just an addict with a static</p>
+          <p>Eu sou apenas um viciado com uma estática</p>
+          <p class="white">(Knock out)</p>
+          <p>(Nocaute)</p>
+          <p class="white">Dodging the (ratatatta)</p>
+          <p>Esquivando-se do (ratatatta)</p>
+          <p class="white">Ff it means by any means</p>
+          <p>Ff significa por qualquer meio</p>
+          <p class="white">Or matter</p>
+          <p>Ou importa</p>
+          <p class="white">Now I want all the respect</p>
+          <p>Agora eu quero todo o respeito</p>
+          <p class="white">And I want all of the checks I might lift off in a jet</p>
+          <p>E quero todos os cheques que posso decolar em um jato</p>
+          <p class="white">I'm ready for war</p>
+          <p>Estou pronto para a guerra</p>
+          <p class="white">Protect my heart in my chest</p>
+          <p>Proteja meu coração em meu peito</p>
+          <p class="white">I must appear in a vest (yes)</p>
+          <p>Devo aparecer de colete (sim)</p>
+          <p class="white">I see the light dimming like (woah)</p>
+          <p>Eu vejo a luz escurecendo como (woah)</p>
+          <p class="white">But I shall never ever fold</p>
+          <p>Mas eu nunca irei desistir</p>
+          <p class="white">That redlight yellowlight slow</p>
+          <p>Aquela luz vermelha luz amarela lenta</p>
+          <p class="white">That redlight yellowlight slow</p>
+          <p>Aquela luz verde sentindo vontade de ir</p>
+          <p class="white">Here I go go again</p>
+          <p>Lá vou eu de novo</p>
+          <p class="white">Trying to get more dough</p>
+          <p>Tentando conseguir mais massa</p>
+          <p class="white">I don't need no more</p>
+          <p>Eu não preciso de mais </p>
+          <p class="white">Friends</p>
+          <p>Amigos</p>
+          <p class="white">Next year be my best year</p>
+          <p>Ano que vem será meu melhor ano</p>
+          <p class="white">Yeah I'm going loco</p>
+          <p>Sim, estou ficando louco</p>
+          <p class="white">And</p>
+          <p>E</p>
+          <p class="white">To the ones that said I wouldn't do it</p>
+          <p>Para aqueles que disseram que eu não faria isso</p>
+          <p class="white">Here I go, go</p>
+          <p>Aqui vou eu vou</p>
+          <p class="white">Again</p>
+          <p>Novamente</p>
+          <p class="white">I'm going all in</p>
+          <p>Estou indo all in</p>
+          <p class="white">(All in, all in) (all in, all in) (all in, all in)</p>
+          <p>(Tudo dentro, tudo dentro) (tudo dentro, tudo dentro) (tudo dentro, tudo dentro)</p>
+          <p class="white">When you down on your luck and you know</p>
+          <p>Quando você está sem sorte e sabe</p>
+          <p class="white">That your weak and cant carry the load</p>
+          <p>Que você é fraco e não consegue carregar a carga</p>
+          <p class="white">Still go, still go, still go</p>
+          <p>Ainda vá, ainda vá, ainda vá</p>
+          <p class="white">When out in the rain and its cold and it feels</p>
+          <p>Quando está fora na chuva e está frio e parece</p>
+          <p class="white">Like the end of the road</p>
+          <p>Como o fim da estrada</p>
+          <p class="white">Still go, still go, still go</p>
+          <p>Ainda vá, ainda vá, ainda vá</p>
+          <p class="white">When out in the rain and its cold and it feels</p>
+          <p>Quando está fora na chuva e está frio e parece</p>
+          <p class="white">Like the end of the road</p>
+          <p>Como o fim da estrada</p>
+          <p class="white">Still go, still go, still go</p>
+          <p>Ainda vá, ainda vá, ainda vá</p>
+          <p class="white">When out in the rain and its cold and it feels</p>
+          <p>Quando está fora na chuva e está frio e parece</p>
+          <p class="white">Like the end of the road</p>
+          <p>Como o fim da estrada</p>
+          <p class="white">Still go, still go, still go</p>
+          <p>Ainda vá, ainda vá, ainda vá</p>
+          <p class="white">All in, all in, all in, all in, all in, all in, all in</p>
+          <p>Tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro, tudo dentro</p>
+        </section>
+    </main>
 
+    <footer>
+
+    </footer>
 </body>
 </html>
